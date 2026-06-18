@@ -1298,6 +1298,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
       margin-top: 40px;
+      align-items: stretch;
     }
     .hosting-card {
       background: var(--bg-card);
@@ -1306,9 +1307,15 @@
       padding: 28px 24px;
       display: flex;
       flex-direction: column;
+      height: 100%;
       text-decoration: none;
       color: inherit;
       transition: border-color 0.2s, background 0.2s, transform 0.15s;
+    }
+    .hosting-card-title {
+      min-height: 2.8em;
+      display: flex;
+      align-items: flex-start;
     }
     .hosting-card:hover {
       border-color: var(--accent);
@@ -1920,7 +1927,7 @@ hermes doctor         # chẩn đoán sự cố</code></pre>
         <a class="hosting-card featured" href="https://hermesbox.orangepi.vn" target="_blank" rel="noopener">
           <div class="hosting-badge">&#9733; Dễ nhất</div>
           <div class="hosting-card-icon">&#9889;</div>
-          <div class="hosting-card-title"><b>HermesBox<b> (sẵn sàng để dùng)</div>
+          <div class="hosting-card-title">HermesBox (sẵn sàng để dùng)</div>
           <div class="hosting-card-price">Mua 1 lần dùng mãi mãi</div>
           <p class="hosting-card-desc">Box Hermes do chính bạn quản lý mà không cần cài đặt, dựa trên mạch nhúng SBC Orange Pi 5 CPU 8 lõi RAM 4GB bộ nhớ 128GB. Đây là nhà cung cấp duy nhất xây dựng riêng cho Hermes, với quyền truy cập terminal đầy đủ, trình duyệt file trực quan và chế độ xem trình duyệt trực tiếp.</p>
           <ul class="hosting-card-features">
